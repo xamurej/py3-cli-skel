@@ -16,12 +16,16 @@ Components
 Let's see which components are worth mentioning and which require documentation:
 
 - `Directory structure`_
-- Configuration
-- Source Code
+- `Configuration`_
 
-  - Encoding
-  - main()
-  - Documenting
+  - `.gitignore`_
+  - `.editorconfig`_
+
+- `Source Code`_
+
+  - `Encoding`_
+  - `main() Function`_
+  - `Documenting`_
 
 - Documentation Generator
 - Testing
@@ -44,33 +48,48 @@ Directory Structure
 The project's directory structure is recommended in `The Hitchhikers Guide to
 Python <http://docs.python-guide.org/en/latest/writing/structure/>`_.
 
+.. _`Configuration`:
+
+Configuration
+=============
+
+.. _`.gitignore`:
 
 .gitignore
-==========
+----------
 The ``.gitignore`` is populated from `gitignore.io <https://www.gitignore.io/>`_.
 
+.. _`.editorconfig`:
 
 .editorconfig
-=============
+-------------
 Use ``.editorconfig`` to define portable editor configuration. See also
 `editorconfig.org <http://editorconfig.org/>`_.
 
+.. _`Source Code`:
 
-main() function
-===============
+Source Code
+===========
+
+.. _`Encoding`:
+
+Encoding
+--------
+How the source code encoding has to be configured is recommended in
+`PEP 263 <https://www.python.org/dev/peps/pep-0263/>`_.
+
+.. _`main() Function`:
+
+main() Function
+---------------
 Guido van Rossum proposes a ``main()`` function in the
 `blog post <http://www.artima.com/forums/flat.jsp?forum=106&thread=4829>`_.
 ``cli.py`` is modelled after GvR's idea, although the file is split into multiple files.
 
+.. _`Documenting`:
 
-Source code encoding
-====================
-How the source code encoding has to be configured is recommended in
-`PEP 263 <https://www.python.org/dev/peps/pep-0263/>`_.
-
-
-Docstring
-=========
+Documenting
+-----------
 Use Google style docstrings.
 http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html
 
