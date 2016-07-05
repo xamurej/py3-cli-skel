@@ -18,19 +18,24 @@ Let's see which components are worth mentioning and which require documentation:
 - `Directory structure`_
 - Configuration
 - Source Code
-    - Encoding
-    - main()
-    - Documenting
+
+  - Encoding
+  - main()
+  - Documenting
+
 - Documentation Generator
 - Testing
 - Tools
-    - virtualenv
-    - pip-tools
-    - Tox
-    - Paver
+
+  - virtualenv
+  - pip-tools
+  - Tox
+  - Paver
+
 - Python Packages
-    - logging
-    - command line options
+
+  - logging
+  - command line options
 
 .. _`Directory structure`:
 
