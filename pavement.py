@@ -13,7 +13,7 @@ def requirements():
 
 
 setup(
-    name='CLI example application',
+    name='CLIapp',
     version='1.0',
     packages=find_packages(exclude=['tests']),
     entry_points={'console_scripts': ['cliapp=cli_app.cli:main'], },
