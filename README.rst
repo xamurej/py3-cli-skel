@@ -29,17 +29,18 @@ Let's see which components are worth mentioning and which require documentation:
 
 - Documentation Generator
 - Testing
-- Tools
+- `Tools`_
 
-  - virtualenv
   - pip-tools
-  - Tox
-  - Paver
+  - `Tox`_
+  - `Paver`_
 
 - Python Packages
 
   - logging
   - command line options
+
+- Docker
 
 .. _`Directory structure`:
 
@@ -75,8 +76,9 @@ Source Code
 
 Encoding
 --------
-How the source code encoding has to be configured is recommended in
-`PEP 263 <https://www.python.org/dev/peps/pep-0263/>`_.
+`PEP 263 <https://www.python.org/dev/peps/pep-0263/>`_ recommends how the source
+code encoding can be configured. It boils down to adding `# -*- coding: <encoding name> -*-`
+as first or second line to each source code file.
 
 .. _`main() Function`:
 
@@ -93,13 +95,20 @@ Documenting
 Use Google style docstrings.
 http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html
 
+.. _`Tools`:
 
-Paver
+Tools
 =====
-`Paver <https://github.com/paver/paver>`_ is a taskrunner like Make and Rake.
 
+.. _`Tox`:
 
-TOX - Test automation
-=====================
+Tox
+---
 Automation and standardisation of tests are run by
 `Tox <https://testrun.org/tox/latest/>`_. that is configured in ``tox.ini``.
+
+.. _`Paver`:
+
+Paver
+-----
+`Paver <https://github.com/paver/paver>`_ is a taskrunner like Make and Rake.
