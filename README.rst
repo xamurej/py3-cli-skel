@@ -112,3 +112,17 @@ Automation and standardisation of tests are run by
 Paver
 -----
 `Paver <https://github.com/paver/paver>`_ is a taskrunner like Make and Rake.
+
+Python Packages
+===============
+
+logging
+-------
+Even if it's tempting, never use ``print()`` instead of proper logging.
+
+Docker
+======
+Docker uses two files ``.dockerignore`` and ``Dockerfile``. The latter is basically
+a script, how to build a docker image. The former is an ignore file similar to
+``.gitignore`` that lists all files and directories that shall be ignored
+while building a docker image.
