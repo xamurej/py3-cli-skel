@@ -32,7 +32,7 @@ Let's see which components are worth mentioning and which require documentation:
   - logging
   - command line options
 
-.._`Directory structure`:
+.. _`Directory structure`:
 
 Directory Structure
 ===================
