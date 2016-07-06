@@ -1,5 +1,1 @@
 configargparse
-nose
-paver
-sphinx
-tox
