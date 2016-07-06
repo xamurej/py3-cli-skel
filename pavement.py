@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 
-import paver.doctools
-
-from paver.easy import *
 from paver.setuputils import setup, find_packages
 
 
@@ -21,10 +18,10 @@ setup(
         '': [
             'pavement.py',
             'setup.py',
-            'README.rst',
-            'requirements.txt',
+
         ],
     },
+    data_files=[('', ['README.rst', 'requirements.txt'])],
     install_requires=requirements(),
     zip_safe=True,
 
