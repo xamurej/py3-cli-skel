@@ -119,10 +119,11 @@ Python Packages
 logging
 -------
 Even if it's tempting, never use ``print()`` instead of proper logging.
+- https://github.com/vinta/awesome-python#logging
 
 Docker
 ======
 Docker uses two files ``.dockerignore`` and ``Dockerfile``. The latter is basically
-a script, how to build a docker image. The former is an ignore file similar to
+a script how to build a docker image. The former is a file similar to
 ``.gitignore`` that lists all files and directories that shall be ignored
 while building a docker image.
