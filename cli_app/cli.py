@@ -3,7 +3,12 @@
 
 import sys
 
+from cli_app import logging
 from cli_app import options
+
+
+logging.Logger()
+LOG = logging.Logger.get('main')
 
 
 def main():

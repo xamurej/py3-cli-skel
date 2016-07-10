@@ -7,6 +7,9 @@ This serves as a long usage message.
 
 import configargparse
 
+from cli_app import logging
+
+LOG = logging.Logger.get('options')
 
 class Usage(Exception):
 
