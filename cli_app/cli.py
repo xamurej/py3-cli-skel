@@ -12,15 +12,9 @@ LOG = logging.Logger.get('main')
 
 
 def main():
-
-    try:
-        args = options.Options().parse()
-        print(args)
-    except options.Usage as err:
-        print(err.msg, file=sys.stderr)
-        print("for help use --help", file=sys.stderr)
-        return 2
-
+    # configargparse raises a SystemExit on error
+    args = options.Options().parse()
+    LOG.info(args)
 
 if __name__ == '__main__':
     sys.exit(main())

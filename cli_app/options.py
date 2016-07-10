@@ -11,11 +11,6 @@ from cli_app import logging
 
 LOG = logging.Logger.get('options')
 
-class Usage(Exception):
-
-    def __init__(self, msg):
-        self.msg = msg
-
 
 class Options(object):
 
@@ -24,7 +19,7 @@ class Options(object):
             default_config_files=['/etc/settings.ini', '~/.my_settings'])
 
         self.parser.add('-c', '--my-config',
-                        required=True,
+                        required=False,
                         is_config_file=True,
                         help='config file path')
 
@@ -42,10 +37,7 @@ class Options(object):
                         help='known variants .vcf',
                         env_var='DBSNP_PATH')
 
-        self.parser.add('vcf', nargs='+', help='variant file(s)')
+        #self.parser.add('vcf', nargs='+', help='variant file(s)')
 
     def parse(self):
-        try:
-            return self.parser.parse_args()
-        except Exception as msg:
-            raise Usage(msg)
+        return self.parser.parse_args()
