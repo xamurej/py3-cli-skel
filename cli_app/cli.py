@@ -5,6 +5,7 @@ import sys
 
 from cli_app import logging
 from cli_app import options
+from cli_app import output
 
 
 logging.Logger()
@@ -15,6 +16,9 @@ def main():
     # configargparse raises a SystemExit on error
     args = options.Options().parse()
     LOG.info(args)
+    out = output.Output(args.text)
+    out.printScreen()
+
 
 if __name__ == '__main__':
     sys.exit(main())
