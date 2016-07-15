@@ -6,7 +6,6 @@ This serves as a long usage message.
 """
 
 import logging
-import datetime
 
 from pythonjsonlogger import jsonlogger
 
@@ -18,7 +17,7 @@ class Logger(object):
         'output',
     ]
 
-    FORMAT='%(asctime) %(module) %(levelname) %(message)'
+    FORMAT = '%(asctime) %(module) %(levelname) %(message)'
 
     def __init__(self):
         self.handler = logging.StreamHandler()
