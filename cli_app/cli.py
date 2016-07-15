@@ -3,19 +3,19 @@
 
 import sys
 
-from cli_app import logging
+from cli_app import log
 from cli_app import options
 from cli_app import output
 
 
-logging.Logger()
-LOG = logging.Logger.get('main')
+log.Logger()
+LOG = log.Logger.get('main')
 
 
 def main():
     # configargparse raises a SystemExit on error
     args = options.Options().parse()
-    LOG.info(args)
+    LOG.debug(args)
     out = output.Output(args.text)
     out.printScreen()
 

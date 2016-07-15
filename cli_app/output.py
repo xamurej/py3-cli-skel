@@ -5,15 +5,15 @@
 This serves as a long usage message.
 """
 
-from cli_app import logging
+from cli_app import log
 
-LOG = logging.Logger.get('output')
+LOG = log.Logger.get('output')
 
 
 class Output(object):
 
     def __init__(self, text):
-        LOG.debug('create Output with "{0}"', text)
+        LOG.info('create Output with "%s"', text)
         self.text = text
 
     def message(self):
