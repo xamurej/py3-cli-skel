@@ -5,16 +5,14 @@
 This serves as a long usage message.
 """
 
-from cli_app import output
-
-from spec import Spec
 from pyshould import it, should
 
+from cli_app import output
 
-class TestOutput(Spec):
-    """class output.Output"""
 
-    def test_should_intialise_with_given_text(self):
+def describe_output():
+
+    def should_intialise_with_given_text():
         value = "test message"
         a = output.Output(value)
         it(a.text).should.equal(value)
