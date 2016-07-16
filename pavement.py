@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 
+from paver.easy import options, Bunch
+import paver.doctools
 from paver.setuputils import setup, find_packages
 
 
@@ -45,3 +47,9 @@ setup(
         'Topic :: Software Development',
         'Topic :: Utilities',
     ], )
+
+options(
+    sphinx=Bunch(
+        builddir="_build"
+    )
+)
