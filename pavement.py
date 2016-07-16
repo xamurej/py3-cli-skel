@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 
-import paver.doctools
+import paver.doctools  # NOQA
 from paver.easy import Bunch, options, sh, task
 from paver.setuputils import find_packages, setup
 

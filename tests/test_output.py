@@ -5,7 +5,8 @@
 This serves as a long usage message.
 """
 
-from pyshould import it, should
+from pyshould import it
+from pyshould import should  # NOQA
 
 from cli_app import output
 
