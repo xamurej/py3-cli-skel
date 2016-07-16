@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 
-from paver.easy import options, Bunch
 import paver.doctools
-from paver.setuputils import setup, find_packages
+from paver.easy import Bunch, options, sh, task
+from paver.setuputils import find_packages, setup
 
 
 def requirements():
@@ -53,3 +53,9 @@ options(
         builddir="_build"
     )
 )
+
+
+@task
+def check(options):
+    """run flake8 linter from tox"""
+    sh("tox -e py34-flake8")
