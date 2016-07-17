@@ -1,0 +1,4 @@
+include pavement.py
+include requirements.txt
+include README.rst
+include setup.py

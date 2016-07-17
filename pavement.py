@@ -13,17 +13,9 @@ def requirements():
 
 setup(
     name='CLIapp',
-    version='1.0',
+    version='1.0.0',
     packages=find_packages(exclude=['tests']),
     entry_points={'console_scripts': ['cliapp=cli_app.cli:main'], },
-    package_data={
-        '': [
-            'pavement.py',
-            'setup.py',
-
-        ],
-    },
-    data_files=[('', ['README.rst', 'requirements.txt'])],
     install_requires=requirements(),
     zip_safe=True,
 
