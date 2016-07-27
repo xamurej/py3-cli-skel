@@ -50,4 +50,7 @@ options(
 @task
 def check(options):
     """run flake8 linter from tox"""
-    sh("tox -e py34-flake8")
+    import tox
+    tox.cmdline(['-e', 'py34-flake8'])
+    # sh("tox -e py34-flake8")
+
