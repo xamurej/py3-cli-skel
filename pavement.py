@@ -54,3 +54,15 @@ def check(options):
     tox.cmdline(['-e', 'py34-flake8'])
     # sh("tox -e py34-flake8")
 
+@task
+def docker_build(options):
+    """build docker image"""
+    import docker
+    # cli = docker.Client(base_url='tcp://127.0.0.1:2375')
+    cli = docker.Client(base_url='unix://var/run/docker.sock')
+    cli.build(
+        path='.',
+        pull=True,
+        rm=True,
+        tag='cliapp'
+    )
