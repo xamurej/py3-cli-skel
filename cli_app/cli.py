@@ -8,7 +8,6 @@ from cli_app import options
 from cli_app import output
 
 
-log.Logger()
 LOG = log.Logger.get('main')
 
 
