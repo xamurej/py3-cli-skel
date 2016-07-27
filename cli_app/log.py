@@ -11,10 +11,9 @@ from pythonjsonlogger import jsonlogger
 
 
 class Logger(object):
+    APP_LOGGER_NAME = 'app'
     LOGGERLIST = [
-        'options',
-        'main',
-        'output',
+        APP_LOGGER_NAME,
     ]
 
     FORMAT = '%(asctime) %(module) %(levelname) %(message)'
@@ -36,5 +35,5 @@ class Logger(object):
         self.handler.setLevel(level)
 
     @staticmethod
-    def get(logger_name):
-        return logging.getLogger(logger_name)
+    def get():
+        return logging.getLogger(Logger.APP_LOGGER_NAME)

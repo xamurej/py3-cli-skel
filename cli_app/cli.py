@@ -7,8 +7,7 @@ from cli_app import log
 from cli_app import options
 from cli_app import output
 
-
-LOG = log.Logger.get('main')
+LOG = log.Logger.get()
 
 
 def main():

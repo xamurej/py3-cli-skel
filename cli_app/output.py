@@ -7,7 +7,7 @@ This serves as a long usage message.
 
 from cli_app import log
 
-LOG = log.Logger.get('output')
+LOG = log.Logger.get()
 
 
 class Output(object):
